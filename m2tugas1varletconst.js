@@ -1,9 +1,9 @@
 var minuman;
-minuman = "es jeruk";
+minuman = "Es Jeruk";
 console.log(minuman);
 
-let firstname ="esa";
+let firstname ="EsaAN";
 console.log(firstname);
 
-const a = "20";
+const a = "41003";
 console.log(a);
