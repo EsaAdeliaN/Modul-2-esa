@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Java Script Typedata Symbol</h1>
+        <p>nilai sebenarnya bersifat anonim, tidak bisa dilihat</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const a = Symbol();
+        const b = symbol();
+
+        console.log(a === b);
+        console.log(a);
+        console.log(b);
+
+        document.getElementById("demo").innerHTML =
+        (a === b) + "<br>" + (a) + "<br>" (b);
+        
+    </script>
+    
+    </body>
+</html>

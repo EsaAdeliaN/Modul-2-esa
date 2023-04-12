@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Tugas 1 Program Document.write</title>
+    </head>
+
+    <body>
+        <h1>Biodata Saya</h1>
+        <p id = "demo"></p>
+
+        <script>
+            let firstname = "Esa";
+            let lastname  = "Adelia";
+            let age       = 19;
+            let married   = false;
+
+            document.writeln(firstname);
+            document.writeln(lastname);
+            document.writeln(age);
+            document.writeln(married);
+
+            document.getElementById("demo").innerHTML =
+            (firstname) + (lastname) + "<br>" + (age) + "<br>" + (married);
+        </script>
+    </body>
+</html>

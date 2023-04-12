@@ -1,3 +1,4 @@
+
 // ini merupakan komentar satu baris, kode dibawah ini tidak akan dijalankan
 // console.log("Halo!");
 /* ini merupakan komentar dengan lebih dari satu baris 
