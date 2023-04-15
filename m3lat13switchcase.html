@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Case Di Javascript</title>
+</head>
+<body>
+    <h1>Switch Case Di Javascript</h1>
+ 
+	<div id="hasil"></div>
+ 
+	<script>
+	
+		var warna = "putih";
+ 
+		switch (warna){
+			case "hitam":
+				teks = "warna hitam";
+				break;
+			case "merah":
+				teks = "Warna merah";
+				break;
+			case "hijau":
+				teks = "Warna hijau";
+				break;
+            case "kuning":
+                teks = "Warna kuning";
+                break;
+            case "merah muda":
+                teks = "Warna merah muda";
+                break;
+            case "biru":
+                teks = "Warna Biru";
+                break;
+            case "putih":
+                teks = "Warna putih";
+                break;
+			default:
+			    teks = "Warna tidak terdeteksi";
+		}		
+		
+		document.getElementById("hasil").innerHTML = teks;
+	</script>
+</body>
+</html>
