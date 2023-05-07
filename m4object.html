@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<hr>
+<h2>BIODATA</h2>
+<hr>
+
+<p id="demo"></p>
+
+<script>
+// Buat sebuah object:
+const user = {
+  name : "Esa Adelia Novianto",
+  age: 19,
+  gender: "woman"
+};
+
+
+const prodi = {
+  Prodi : "Rekayasa Perangkat Lunak",
+  Angkatan : 2022,
+  Materi : "JavaScript",
+} 
+
+
+// Menampilkan beberapa data dari object:
+document.getElementById("demo").innerHTML =
+ "Nama  : " +  user.name + "<br>" + "Umur   : " + user.age + "<br>" + "Gender : " + user.gender + "<hr>" + "<h2>PRODI</h2>" + "<hr>" + "<br>" +  "Prodi : " + prodi.Prodi + "<br>" + "Angkatan : " + prodi.Angkatan + "<br>" + "Materi : " + prodi.Materi;
+</script>
+
+</body>
+</html>

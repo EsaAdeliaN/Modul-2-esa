@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <title>EsaAN CL</title>
+   </head> 
+
+            <script>
+                alert("Welcome!");
+                function HaloPelanggan() {alert("Nama:"+nama+
+                "\nJumlah HP:"+jumlah+
+                "\nHarga:Rp"+harga+
+                "\nDiskon Member:Rp"+discount+
+                "\nTotal Bayar:Rp"+total);}
+            </script>
+            
+   <body>
+    <hr>
+    <h1><center>EsaAN CL </center></h1>
+    <hr>
+    <h2>pesanan</h2>
+    <p>Nama Pelanggan : <span id= "nama"></span></p>
+    <p>Jenis HP : <span id="jenis"></span></p>
+    <p>Jumlah Barang : <span id="jumlah"></span></p>
+    <p>Potongan Member : Rp<span id="discount"></span></p>
+    <p>Total Harga : Rp<span id="harga"></span></p>
+    <button onclick="HaloPelanggan()">cek</button>
+
+
+    <script>
+    //Input Pesanan 1
+    const nama = "Esa Adelia Novianto";
+    const jenis = "ASUS ROG phone 6"
+    const jumlah = 2
+    const member = true
+
+    //Input Harga
+    let harga;
+    switch(jenis) {
+        case "Xiaomi 4A":
+        harga = 1500000 * jumlah;
+        break;
+        case "Samsung Galaxy A22":
+        harga = 3000000 * jumlah;
+        break;
+        case "ASUS ROG phone 6":
+        harga = 11000000 * jumlah;
+        break;
+        case "Iphone 11 Pro":
+        harga = 13000000 * jumlah;
+        break;
+        default:
+        harga = 0;
+    }
+
+     //Input Discount
+     let discount = 0;
+    if (member) {
+        discount = harga * 0.1;
+        total = harga - discount;
+    }
+   
+    //Output Pesanan
+    document.getElementById("nama").innerHTML = nama;
+    document.getElementById("jenis").innerHTML = jenis;
+    document.getElementById("jumlah").innerHTML = jumlah;
+    document.getElementById("discount").innerHTML = discount.toLocaleString();
+    document.getElementById("harga").innerHTML = total.toLocaleString();
+
+    </script>
+   </body>
+</html>
