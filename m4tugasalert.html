@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Modul 4</title>
+</head>
+<body>
+    <script>
+const namaToko ='ESA CL';
+const namaa = prompt('Masukkan nama');
+namaBarang = prompt('Pilih Kode Barang:\n1.XIAOMI REDMI 4A \n2. SAMSUNG GALAXY A22 \n3. ASUS ROG PHONE 6 \n4. IPHONE 11 PRO');
+jumlahBeli = prompt('Masukkan Jumlah Pembelian');
+kodemember = prompt('Apakah Anda member\n1.Ya\n2.Tidak');
+
+namaBarang;
+let harga, kodeNama;
+if (namaBarang == '1') {
+namaBarang = 'XIAOMI REDMI 4A';
+harga = 15000000;
+} else if (namaBarang == '2') {
+namaBarang = 'SAMSUNG GALAXY A22';
+harga = 3000000;
+} else if (namaBarang == '3') {
+namaBarang = 'ASUS ROG PHONE 6';
+harga = 11000000;
+} else if (namaBarang == '4') {
+namaBarang = 'IPHONE 11 PRO';
+harga = 13000000;
+} else {
+namaBarang = 'Kode barang tidak terdaftar';
+harga = 0;
+}
+
+var totalHarga = harga * jumlahBeli;
+
+if (kodemember == '1') {resizeTo
+    var diskon = totalHarga - (totalHarga*0.1);
+} else if (kodemember == '2') {
+    diskon = totalHarga
+}
+
+let discount = "10%";
+
+document.write("<B>"+namaToko+"</B>"+"<BR>");
+document.write('Nama : ' + namaa+"<br>");
+document.write('Nama Barang : ' + namaBarang+"<br>");
+document.write('Harga Satuan : ' + harga+ "<br>");
+document.write('Jumlah Pembelian : ' + jumlahBeli +"<br>");
+document.write('Total Harga : ' + totalHarga+"<br>");
+
+if (kodemember == '1') {
+    document.write('Diskon : Anda mendapatkan diskon '+ discount+"<br>")
+} else if (kodemember == '2') {
+    document.write('Diskon : Anda Tidak Dapat Diskon'+"<br>")
+}{
+    
+}
+document.write('Total Pembayaran : ' + diskon+"<br>");
+document.write("<B>"+"TERIMAKASIH ATAS KUNJUNGAN ANDA"+"</B>");
+
+    </script>
+    
+</body>
+</html>
