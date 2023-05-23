@@ -1,0 +1,90 @@
+*{font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+   .content h1 {
+    text-align: center;
+  }
+  #form-in {
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  #form-in input, #form-in select{
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    width: 100%;
+    padding: 0.7em 0;
+    margin-right: 0.7em;
+  }
+  #form-in button {
+    background: lightgrey;
+    padding: 0.7em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  #form-in button:hover {
+    background: rgb(32, 89, 170);
+  }
+  
+  label {
+    text-align: right;
+    display: flex;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  input:focus {
+    outline: 3px solid rgb(21, 102, 150);
+  }
+  
+  @media (min-width: 400px) {
+    #form-in {
+      overflow: hidden;
+    }
+  
+    label {
+      float: left;
+      width: 200px;
+    }
+  
+    input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+  
+    #form-in button {
+      float: right;
+      width: calc(100% - 200px);
+    }
+  }
+#hasil {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#hasil th,
+#hasil td {
+  padding: 10px;
+  border: 2px solid #000000;
+  text-align: center;
+}
+
+#hasil th {
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+#Outputbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

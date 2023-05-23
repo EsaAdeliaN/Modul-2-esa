@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1">
+        <title>Esa Adelia Novianto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+       
+        <!--header-->
+        <div class="medsos">
+            <div class="container">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+            <h1><a href="">WELCOME!</a></h1>
+                <ul>
+                    <a href="biodata.html"><li class="active">BIODATA</li></a>
+                    <a href="array.html"><li>ARRAY</li></a>
+                    <a href="contact.html"><li>CONTACT</li></a>
+                </ul>
+             </div>
+
+             
+            
+            <div class="content">
+                <h1>Nilai Mahasiswa</h1> 
+                <form id="form-in"> 
+
+                    <label for="nama">Masukan Nama</label>
+                    <input type="text" id="nama" required> 
+                    <label for="nim">Masukan NIM</label>
+                    <input type="text" id="nim"  required> 
+                        <label for="matakuliah">Mata Kuliah</label>
+                        <select id="matakuliah" >
+                        <option value="Pendidikan Pancasila">Pendidikan Pancasila</option>
+                        <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                        <option value="Diskrit">Diskrit</option>
+                        <option value="SDA">SDA</option>
+                        <option value="Kalkulus">Kalkulus</option>
+                        <option value="Sistem Operasi">Sistem Operasi</option>
+                        <option value="Desain Grafis">Desain Grafis</option>
+                        <option value="Pemrograman Komputer">Pemrograman Komputer</option>
+                        <option value="Arsitektur Komputer">Arsitektur Komputer</option>
+                        <option value="Bahasa Inggris">Bahasa Inggris</option>
+                        </select>
+                        <label for="nilai">Nilai Akhir</label>
+                        <input type="text" id="nilai" >
+
+                        <button type="button" onclick="Tampilkan()">Tampilkan Nilai</button>
+                        <button type="reset">Reset</button>
+                </form>
+                    <table id="hasil">
+                        <thead>
+                          <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Mata Kuliah</th>
+                            <th>Nilai</th>
+                            <th>Nilai Huruf</th>
+                            <th>Index Nilai</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Outputbody"></tbody>
+                      </table>
+            </div>
+            
+            
+        </header>
+         <script src="javasc.js"></script>
+    </body>
+</html>
