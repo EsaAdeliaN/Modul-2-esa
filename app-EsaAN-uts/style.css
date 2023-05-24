@@ -1,8 +1,45 @@
-*{font-family: Georgia, 'Times New Roman', Times, serif ;
-}
+* {font-family: 'Times New Roman', Times, serif;
+    
+  }
+  body {
+    background-image: "banner.jpg";
+    background-color: rgb(42, 57, 167);
+    background-position: cover;
+  }
    .content h1 {
     text-align: center;
-  }
+   }
+.container{
+    flex:1;
+    text-align: center;
+}
+.container ul{
+    display: inline;
+}
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.container ul a{
+    color: #060606;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(1, 1, 1);
+    display: block;
+    margin: auto;
+}
+.container ul li:hover:after{
+    width: 100%;
+}
+.container li:hover {
+    color: rgb(228, 54, 54);
+}
   #form-in {
     background: #f9f9f9;
     border: 1px solid #c1c1c1;
@@ -27,7 +64,7 @@
     margin-bottom: 20px;
   }
   #form-in button:hover {
-    background: rgb(32, 89, 170);
+    background: rgb(42, 57, 167);
   }
   
   label {
@@ -41,7 +78,7 @@
     margin-bottom: 0.5rem;
   }
   input:focus {
-    outline: 3px solid rgb(21, 102, 150);
+    outline: 3px solid rgb(42, 57, 167);
   }
   
   @media (min-width: 400px) {
@@ -63,7 +100,11 @@
       float: right;
       width: calc(100% - 200px);
     }
-  }
+  } 
+  .medsos li {
+    height: 40px;
+    width: 40px;
+}
 #hasil {
   width: 100%;
   border-collapse: collapse;
