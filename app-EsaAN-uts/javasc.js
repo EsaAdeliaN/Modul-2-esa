@@ -48,8 +48,8 @@ outputbody.innerHTML += output
   
 }
   
-  function reset() {
-    document.getElementById("nama").value = "";
+  function reset1() {
+    document.getElementById("name").value = "";
     document.getElementById("nim").value = "";
     document.getElementById("matakuliah").value = "";
     document.getElementById("nilai").value = "";
