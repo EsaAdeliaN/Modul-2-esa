@@ -6,3 +6,5 @@ if (a > 9) {
 else {
     console.log("ini merupakan bilangan satuan")
 }
+
+
