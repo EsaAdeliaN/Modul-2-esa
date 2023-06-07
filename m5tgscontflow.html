@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Control Flow</title>
+</head>
+<body>
+	<h1>Control Flow</h1>
+    <p id="demo"></p>
+	<p id="demo2"></p>
+    
+	<script type="text/javascript">
+		var x = 5;
+		var y = 10;
+		var z = 15;
+
+		if (x > y) {
+		  document.getElementById("demo").innerHTML = "x lebih besar dari y";
+		} else if (x < y) {
+		  document.getElementById("demo").innerHTML = "x lebih kecil dari y";
+		} else {
+		  document.getElementById("demo").innerHTML = "x sama dengan y";
+		}
+
+		switch (z) {
+		  case 10:
+		    document.getElementById("demo2").innerHTML = "z sama dengan 10";
+		    break;
+		  case 15:
+		    document.getElementById("demo2").innerHTML = "z sama dengan 15";
+		    break;
+		  default:
+		    document.getElementById("demo2").innerHTML = "z bukan 10 atau 15";
+		}
+	</script>
+
+</body>
+</html>
