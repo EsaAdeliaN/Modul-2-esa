@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Absen Mahasiswa</title>
+	<script>
+		function absen() {
+			var nama = document.getElementById("nama").value;
+			var nim = document.getElementById("nim").value;
+			var kelas = document.getElementById("kelas").value;
+			var tanggal = new Date().toLocaleDateString();
+			var waktu = new Date().toLocaleTimeString();
+
+			document.getElementById("hasil").innerHTML += "<tr><td>" + nama + "</td><td>" + nim + "</td><td>" + kelas + "</td><td>" + tanggal + "</td><td>" + waktu + "</td></tr>";
+		}
+	</script>
+</head>
+<body>
+	<h1>Absen Mahasiswa</h1>
+
+	<table border="1">
+		<tr>
+			<th>Nama</th>
+			<th>NIM</th>
+			<th>Kelas</th>
+			<th>Tanggal</th>
+			<th>Waktu</th>
+		</tr>
+
+		<tbody id="hasil"></tbody>
+	</table>
+
+	<br>
+
+	Nama: <input type="text" id="nama"><br>
+	NIM: <input type="text" id="nim"><br>
+	Kelas: <input type="text" id="kelas"><br>
+
+	<button onclick="absen()">Absen</button>
+</body>
+</html>

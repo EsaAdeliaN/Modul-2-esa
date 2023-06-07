@@ -1,5 +1,4 @@
-let age = 15;
-let result;
+var age = 15;
 
 if (age >= 18) {
       result = "kamu akan mengikuti pemilihan umum";
@@ -8,3 +7,4 @@ if (age >= 18) {
 }
 
 console.log(result);
+
