@@ -1,0 +1,29 @@
+
+
+body {
+    background-image: url(bg1.jpg);
+}
+
+
+
+button {
+    background: rgba(170, 142, 142, 0.667);
+    color: #080808;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid;
+    cursor: pointer;
+    font-family: Fredoka;
+    font-size: 15pt;
+  }
+  .desain{
+    text-align: center;
+  }
+  
+  h1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
