@@ -1,19 +1,23 @@
+<!DOCTYPE html>
 <html>
-    <title>While do While pada JavaScript</title>
+<head>
+<title>While do While in Javascript</title>
+</head>
+<body>
 
-    <body>
-        <h1>Penggunaan while do while pada JavaScript</h1>
 
-    <script>
-   var ulangi = confirm("Apakah anda mau mengulang?");
-var counter = 0;
+<script>
+    // program to display numbers
+let i = 1;
+let j = "Esa Adelia Novianto"
+const n = 25;
 
-while(ulangi){
-    counter++;
-    ulangi = confirm("Apakah anda mau mengulang?");
-}
+// do...while loop from 1 to 5
+do {
+    document.write("<p>" + i + " " + j );
+    i++;
+} while(i <= n);
+</script>
 
-document.write("Perulangan sudah dilakuakn sebanyak "+ counter +" kali");
-    </script>
-    </body>
+</body>
 </html>
